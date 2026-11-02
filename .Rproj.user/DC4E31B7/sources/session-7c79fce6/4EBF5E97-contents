@@ -1,0 +1,12 @@
+Package: SDD
+Type: Package
+Title: Spherical Dirichlet Distribution
+Version: 1.0
+Authors@R: person("Michail", "Tsagris", role = c("aut", "cre"), email = "mtsagris@uoc.gr")
+Maintainer: Michail Tsagris <mtsagris@uoc.gr>
+Depends: R (>= 4.0)
+Imports: Compositional, Rfast, stats
+Suggests: Rfast2
+Description: Maximum likelihood estimation, regression analysis, random values generation, and other functions for the spherical Dirichlet distribution. The relevant paper is Harris and Guardiola (2026) <doi:10.1080/03610926.2026.2722098>. 
+License: GPL (>= 2)
+Encoding: UTF-8

@@ -1,0 +1,11 @@
+sdd.mle <- function(x, tol = 1e-7) {
+  n <- dim(x)[1]  ;  p <- dim(x)[2]
+  slx <- 2 * Rfast::colmeans( log(x) )     ## 2/n * sum_j log x_kj  (sufficient statistic)
+  a <- Rfast::diri.nr2(x^2, tol = tol)$param
+  lik <- lgamma( sum(a) ) - sum( lgamma(a) ) + sum( (a - 0.5) * slx )
+  if ( is.null(colnames(x)) ) {
+    names(a) <- paste("X", 1:p, sep = "")
+  } else  names(a) <- colnames(x)
+  loglik <- n * (p - 1) * log(2) + n * lik
+  list(loglik = loglik, a = a)
+}

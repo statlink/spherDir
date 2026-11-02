@@ -1,0 +1,63 @@
+\name{Density values of the zero adjusted Dirichlet distribution}
+\alias{dsdd}
+\title{
+Density values of the zero adjusted Dirichlet distribution
+}
+
+\description{
+Density values of the zero adjusted Dirichlet distribution.
+}
+
+\usage{
+dsdd(y, a, logged = FALSE)
+}
+
+\arguments{
+\item{y}{
+A matrix with compositional data with zero values.
+}
+\item{a}{
+The parameters of the spherical Dirichlet distribution.
+}
+\item{logged}{
+A boolean variable specifying whether the logarithm of the density values to
+be returned. It is set to TRUE by default.
+}
+}
+
+\details{
+The density values of the zero adjusted Dirichlet distribution are computed.
+}
+
+\value{
+A vector with the density values.
+}
+
+\references{
+Harris J. and Guardiola J. (2026). Inferential methods for the spherical-Dirichlet distribution.
+Communications in Statistics-Theory and Methods, 55(23): 8245--8269.
+}
+
+\author{
+Michail Tsagris.
+
+R implementation and documentation: Michail Tsagris \email{mtsagris@uoc.gr}.
+}
+
+%\note{
+%%  ~~further notes~~
+%}
+
+\seealso{
+\code{\link{sdd.mle}, \link{sdd.reg}
+}
+}
+
+\examples{
+y <- as.matrix(iris[, 1:3])
+y <- y / rowSums(y)
+y <- sqrt(y)
+mod <- sdd.mle(y)
+den <- dsdd(100, mod$a)
+}
+

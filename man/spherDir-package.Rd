@@ -1,0 +1,38 @@
+\name{spherDir-package}
+\alias{spherDir-package}
+\docType{package}
+\title{
+Spherical Dirichlet Distribution
+}
+
+\description{
+Maximum likelihood estimation, regression analysis, random values generation,
+and other functions for the spherical Dirichlet distribution.
+}
+
+\details{
+\tabular{ll}{
+Package: \tab spherDir\cr
+Type: \tab Package\cr
+Version: \tab 1.0 \cr
+Date: \tab 2026-11-02 \cr
+}
+}
+
+\author{
+Michail Tsagris \email{mtsagris@uoc.gr}
+}
+
+\section{Maintainers}{
+Michail Tsagris <mtsagris@uoc.gr>.
+}
+
+\references{
+Harris J. and Guardiola J. (2026). Inferential methods for the spherical-Dirichlet distribution.
+Communications in Statistics-Theory and Methods, 55(23): 8245--8269.
+}
+
+
+
+
+

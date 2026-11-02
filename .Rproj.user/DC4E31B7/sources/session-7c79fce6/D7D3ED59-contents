@@ -1,0 +1,6 @@
+#useDynLib(SDD, .registration = TRUE)
+
+importFrom("Rfast", rowsums, colmeans, diri.nr2)
+importFrom("Compositional", diri.reg.irls)
+importFrom("stats", rgamma)
+
